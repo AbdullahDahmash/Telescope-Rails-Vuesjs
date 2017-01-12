@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+user = User.create!({:email=> "test@test.com", :password=> "111111", :password_confirmation=> "111111"})
+
+5.times {
+    Post.create!({:title=> Faker::Name.name, :link=> Faker::Internet.domain_name, :user=> user})
+}

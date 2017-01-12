@@ -53,3 +53,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'vuejs-rails'
+
+gem 'acts_as_commentable_with_threading'
+
+gem 'faker', '~> 1.7', '>= 1.7.2'
+
+gem 'devise', '~> 4.2'
