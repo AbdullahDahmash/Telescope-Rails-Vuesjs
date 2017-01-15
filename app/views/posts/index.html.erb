@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>HELLO</h1>
+    <div class="list-group">
+        <% @posts.each do |post| %>
+        <div class="list-group-item list-group-item-action flex-column align-items-start ">
+            <div class="d-flex w-100 justify-content-between">
+                <h5>
+                    <a href="http://<%=post.link%>" class="mb-1"><%=post.title%></a>
+                    &nbsp;
+                    <%=link_to post, class: "btn btn-info btn-sm" do%>
+                    Comments
+                    <%end%>
+                </h5>
+              <small><%=time_ago_in_words post.created_at%></small>
+            </div>
+        </div>
+        <%end%>
+    </div>
+</div>

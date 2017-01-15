@@ -17,7 +17,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+# gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -59,3 +59,9 @@ gem 'acts_as_commentable_with_threading'
 gem 'faker', '~> 1.7', '>= 1.7.2'
 
 gem 'devise', '~> 4.2'
+
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+source 'https://rails-assets.org' do
+    gem 'rails-assets-tether', '>= 1.3.3'
+end
